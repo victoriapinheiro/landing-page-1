@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mobile*/
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 70vw;
+        padding-top: 5%;
+    }
+
+    .container-textual {
+        margin-top: 5%;
+        max-width: 80vw;
+        text-align: center;
+        gap: 5vw;
+        align-items: center;
+    }
+
+    .container-textual h1 {
+        
+        font-size: 12vw;
+    }
+
+    .container-textual p {
+        font-size: 3.5vw;
+    }
+
+    .container-textual a {
+        width: 23vw;
+        height: 9vw;
+        margin-bottom: 5%;
+    }
+
+
+
+}
+
+/*desktop*/
+@media screen and (min-width:768px) {
+    main {
+        flex-direction: row;
+        padding-top: 5vh;
+    }
+
+    img {
+        width: 32vw;
+    }
+
+    .container-textual {
+        max-width: 30vw;
+        gap: 1.7vw;
+    }
+
+    .container-textual h1 {
+        font-size: 4.5vw;
+    }
+
+    .container-textual a {
+        width: 12vw;
+        height: 9vh;
+        font-size: 1.6vw;
+    }
+
+    .container-textual p {
+        font-size: 1.3vw;
+    }
+
+
+}
+
+body {
+    width: 100%;
+    font-family: "Work Sans", serif;
+}
+
+main {
+    background: linear-gradient(#AB2706,#9C2004);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
+    min-height: 100vh;
+}
+
+.container-textual {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-textual h1 {
+    font-weight: 700;
+}
+
+.container-textual p {
+    font-weight: 300;
+}
+
+.container-textual a {
+    text-decoration: none;
+    color: #080808;
+    background-color: #E5B94B;
+    border-radius: 36px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-textual a:hover {
+    background-color: #1d1500;
+    border: #E5B94B solid 1px;
+    color: #E5B94B;
+}
